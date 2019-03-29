@@ -14,6 +14,7 @@ $sql .= "INSERT INTO News (title, content)
 if ($conn->multi_query($sql)) {
     echo "thanh cong them ID";
 } else {
+    echo 'abc';
     echo "error"."<br>".$conn->error;
 }
 
